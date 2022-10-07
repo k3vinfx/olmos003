@@ -13,7 +13,7 @@ import { Reserva } from '../models/reserva.model';
 })
 export class ReservaService {
 
-  url=environment.uri
+  url=environment.uri;
 
   private reservas:Reserva[]=[];
   private fetchReservas=new Subject<Reserva[]>();
